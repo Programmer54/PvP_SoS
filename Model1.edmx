@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="GenelModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="SoS_Kullanici">
+          <Key>
+            <PropertyRef Name="KullaniciAdi" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Adi" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="KullaniciAdi" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Sifre" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Zafer" Type="int" Nullable="false" />
+          <Property Name="Bozgun" Type="int" Nullable="false" />
+          <Property Name="İstek" Type="int" Nullable="false" />
+          <Property Name="Online" Type="bit" Nullable="false" />
+          <Property Name="Sohbet" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SoS_Oyun_İci">
+          <Key>
+            <PropertyRef Name="OyunId" />
+          </Key>
+          <Property Name="OyunId" Type="int" Nullable="false" />
+          <Property Name="Sira" Type="int" />
+          <Property Name="Kazanan" Type="int" />
+          <Property Name="HamleSayisi" Type="int" />
+          <Property Name="Degisenİndis" Type="int" />
+          <Property Name="İndisDegeri" Type="char" MaxLength="1" />
+          <Property Name="Bittimi" Type="bit" Nullable="false" />
+          <Property Name="Ben" Type="int" Nullable="false" />
+          <Property Name="O" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SoS_Oyun_Kabul">
+          <Key>
+            <PropertyRef Name="OyunId" />
+          </Key>
+          <Property Name="OyunId" Type="int" Nullable="false" />
+          <Property Name="Kimden" Type="int" Nullable="false" />
+          <Property Name="Kime" Type="int" Nullable="false" />
+          <Property Name="Kabul" Type="int" Nullable="false" />
+          <Property Name="Oyun_Asil_İd" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SoS_Sohbet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Sohbet_id" Type="int" Nullable="false" />
+          <Property Name="Kimden" Type="int" Nullable="false" />
+          <Property Name="Kime" Type="int" Nullable="false" />
+          <Property Name="Tarih" Type="datetime" Nullable="false" />
+          <Property Name="Mesaj" Type="text" />
+          <Property Name="Bittimi" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="GenelModelStoreContainer">
+          <EntitySet Name="SoS_Kullanici" EntityType="Self.SoS_Kullanici" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SoS_Oyun_İci" EntityType="Self.SoS_Oyun_İci" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SoS_Oyun_Kabul" EntityType="Self.SoS_Oyun_Kabul" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SoS_Sohbet" EntityType="Self.SoS_Sohbet" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="GenelModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="SoS_Kullanici">
+          <Key>
+            <PropertyRef Name="KullaniciAdi" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Adi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="KullaniciAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Zafer" Type="Int32" Nullable="false" />
+          <Property Name="Bozgun" Type="Int32" Nullable="false" />
+          <Property Name="İstek" Type="Int32" Nullable="false" />
+          <Property Name="Online" Type="Boolean" Nullable="false" />
+          <Property Name="Sohbet" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SoS_Oyun_İci">
+          <Key>
+            <PropertyRef Name="OyunId" />
+          </Key>
+          <Property Name="OyunId" Type="Int32" Nullable="false" />
+          <Property Name="Sira" Type="Int32" />
+          <Property Name="Kazanan" Type="Int32" />
+          <Property Name="HamleSayisi" Type="Int32" />
+          <Property Name="Degisenİndis" Type="Int32" />
+          <Property Name="İndisDegeri" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="Bittimi" Type="Boolean" Nullable="false" />
+          <Property Name="Ben" Type="Int32" Nullable="false" />
+          <Property Name="O" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SoS_Oyun_Kabul">
+          <Key>
+            <PropertyRef Name="OyunId" />
+          </Key>
+          <Property Name="OyunId" Type="Int32" Nullable="false" />
+          <Property Name="Kimden" Type="Int32" Nullable="false" />
+          <Property Name="Kime" Type="Int32" Nullable="false" />
+          <Property Name="Kabul" Type="Int32" Nullable="false" />
+          <Property Name="Oyun_Asil_İd" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SoS_Sohbet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Sohbet_id" Type="Int32" Nullable="false" />
+          <Property Name="Kimden" Type="Int32" Nullable="false" />
+          <Property Name="Kime" Type="Int32" Nullable="false" />
+          <Property Name="Tarih" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Mesaj" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Bittimi" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="GenelEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="SoS_Kullanici" EntityType="Self.SoS_Kullanici" />
+          <EntitySet Name="SoS_Oyun_İci" EntityType="Self.SoS_Oyun_İci" />
+          <EntitySet Name="SoS_Oyun_Kabul" EntityType="Self.SoS_Oyun_Kabul" />
+          <EntitySet Name="SoS_Sohbet" EntityType="Self.SoS_Sohbet" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="GenelModelStoreContainer" CdmEntityContainer="GenelEntities">
+          <EntitySetMapping Name="SoS_Kullanici">
+            <EntityTypeMapping TypeName="GenelModel.SoS_Kullanici">
+              <MappingFragment StoreEntitySet="SoS_Kullanici">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Adi" ColumnName="Adi" />
+                <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+                <ScalarProperty Name="Zafer" ColumnName="Zafer" />
+                <ScalarProperty Name="Bozgun" ColumnName="Bozgun" />
+                <ScalarProperty Name="İstek" ColumnName="İstek" />
+                <ScalarProperty Name="Online" ColumnName="Online" />
+                <ScalarProperty Name="Sohbet" ColumnName="Sohbet" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SoS_Oyun_İci">
+            <EntityTypeMapping TypeName="GenelModel.SoS_Oyun_İci">
+              <MappingFragment StoreEntitySet="SoS_Oyun_İci">
+                <ScalarProperty Name="O" ColumnName="O" />
+                <ScalarProperty Name="Ben" ColumnName="Ben" />
+                <ScalarProperty Name="OyunId" ColumnName="OyunId" />
+                <ScalarProperty Name="Sira" ColumnName="Sira" />
+                <ScalarProperty Name="Kazanan" ColumnName="Kazanan" />
+                <ScalarProperty Name="HamleSayisi" ColumnName="HamleSayisi" />
+                <ScalarProperty Name="Degisenİndis" ColumnName="Degisenİndis" />
+                <ScalarProperty Name="İndisDegeri" ColumnName="İndisDegeri" />
+                <ScalarProperty Name="Bittimi" ColumnName="Bittimi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SoS_Oyun_Kabul">
+            <EntityTypeMapping TypeName="GenelModel.SoS_Oyun_Kabul">
+              <MappingFragment StoreEntitySet="SoS_Oyun_Kabul">
+                <ScalarProperty Name="Oyun_Asil_İd" ColumnName="Oyun_Asil_İd" />
+                <ScalarProperty Name="OyunId" ColumnName="OyunId" />
+                <ScalarProperty Name="Kimden" ColumnName="Kimden" />
+                <ScalarProperty Name="Kime" ColumnName="Kime" />
+                <ScalarProperty Name="Kabul" ColumnName="Kabul" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SoS_Sohbet">
+            <EntityTypeMapping TypeName="GenelModel.SoS_Sohbet">
+              <MappingFragment StoreEntitySet="SoS_Sohbet">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Sohbet_id" ColumnName="Sohbet_id" />
+                <ScalarProperty Name="Kimden" ColumnName="Kimden" />
+                <ScalarProperty Name="Kime" ColumnName="Kime" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="Mesaj" ColumnName="Mesaj" />
+                <ScalarProperty Name="Bittimi" ColumnName="Bittimi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GenelModelStoreContainer" CdmEntityContainer="GenelEntities">
+    <EntitySetMapping Name="SoS_Kullanici">
+      <EntityTypeMapping TypeName="GenelModel.SoS_Kullanici">
+        <MappingFragment StoreEntitySet="SoS_Kullanici">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="Zafer" ColumnName="Zafer" />
+          <ScalarProperty Name="Bozgun" ColumnName="Bozgun" />
+          <ScalarProperty Name="İstek" ColumnName="İstek" />
+          <ScalarProperty Name="Online" ColumnName="Online" />
+          <ScalarProperty Name="Sohbet" ColumnName="Sohbet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SoS_Oyun_İci">
+      <EntityTypeMapping TypeName="GenelModel.SoS_Oyun_İci">
+        <MappingFragment StoreEntitySet="SoS_Oyun_İci">
+          <ScalarProperty Name="O" ColumnName="O" />
+          <ScalarProperty Name="Ben" ColumnName="Ben" />
+          <ScalarProperty Name="OyunId" ColumnName="OyunId" />
+          <ScalarProperty Name="Sira" ColumnName="Sira" />
+          <ScalarProperty Name="Kazanan" ColumnName="Kazanan" />
+          <ScalarProperty Name="HamleSayisi" ColumnName="HamleSayisi" />
+          <ScalarProperty Name="Degisenİndis" ColumnName="Degisenİndis" />
+          <ScalarProperty Name="İndisDegeri" ColumnName="İndisDegeri" />
+          <ScalarProperty Name="Bittimi" ColumnName="Bittimi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SoS_Oyun_Kabul">
+      <EntityTypeMapping TypeName="GenelModel.SoS_Oyun_Kabul">
+        <MappingFragment StoreEntitySet="SoS_Oyun_Kabul">
+          <ScalarProperty Name="Oyun_Asil_İd" ColumnName="Oyun_Asil_İd" />
+          <ScalarProperty Name="OyunId" ColumnName="OyunId" />
+          <ScalarProperty Name="Kimden" ColumnName="Kimden" />
+          <ScalarProperty Name="Kime" ColumnName="Kime" />
+          <ScalarProperty Name="Kabul" ColumnName="Kabul" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SoS_Sohbet">
+      <EntityTypeMapping TypeName="GenelModel.SoS_Sohbet">
+        <MappingFragment StoreEntitySet="SoS_Sohbet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Sohbet_id" ColumnName="Sohbet_id" />
+          <ScalarProperty Name="Kimden" ColumnName="Kimden" />
+          <ScalarProperty Name="Kime" ColumnName="Kime" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Mesaj" ColumnName="Mesaj" />
+          <ScalarProperty Name="Bittimi" ColumnName="Bittimi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

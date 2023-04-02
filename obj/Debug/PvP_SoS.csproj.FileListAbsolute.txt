@@ -1,0 +1,48 @@
+C:\Users\Programmer\source\repos\PvP_SoS\bin\Debug\PvP_SoS.exe.config
+C:\Users\Programmer\source\repos\PvP_SoS\bin\Debug\PvP_SoS.exe
+C:\Users\Programmer\source\repos\PvP_SoS\bin\Debug\PvP_SoS.pdb
+C:\Users\Programmer\source\repos\PvP_SoS\bin\Debug\EntityFramework.dll
+C:\Users\Programmer\source\repos\PvP_SoS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Programmer\source\repos\PvP_SoS\bin\Debug\EntityFramework.xml
+C:\Users\Programmer\source\repos\PvP_SoS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Programmer\source\repos\PvP_SoS\obj\Debug\PvP_SoS.csprojAssemblyReference.cache
+C:\Users\Programmer\source\repos\PvP_SoS\obj\Debug\PvP_SoS.Form1.resources
+C:\Users\Programmer\source\repos\PvP_SoS\obj\Debug\PvP_SoS.Properties.Resources.resources
+C:\Users\Programmer\source\repos\PvP_SoS\obj\Debug\PvP_SoS.csproj.GenerateResource.cache
+C:\Users\Programmer\source\repos\PvP_SoS\obj\Debug\PvP_SoS.csproj.CoreCompileInputs.cache
+C:\Users\Programmer\source\repos\PvP_SoS\obj\Debug\PvP_SoS.csproj.CopyComplete
+C:\Users\Programmer\source\repos\PvP_SoS\obj\Debug\PvP_SoS.exe
+C:\Users\Programmer\source\repos\PvP_SoS\obj\Debug\PvP_SoS.pdb
+C:\Users\Programmer\source\repos\PvP_SoS\obj\Debug\PvP_SoS.Form2.resources
+C:\Users\Programmer\source\repos\PvP_SoS\obj\Debug\PvP_SoS.Form3.resources
+C:\Users\Programmer\source\repos\PvP_SoS\obj\Debug\PvP_SoS.Form4.resources
+C:\Users\Programmer\source\repos\PvP_SoS\obj\Debug\PvP_SoS.Form5.resources
+C:\Users\Programmer\source\repos\PvP_SoS\obj\Debug\PvP_SoS.Form6.resources
+C:\Users\Programmer\source\repos\PvP_SoS\obj\Debug\PvP_SoS.Form7.resources
+C:\Users\Programmer\source\repos\PvP_SoS\obj\Debug\PvP_SoS.Form8.resources
+C:\Users\Programmer\source\repos\PvP_SoS\obj\Debug\PvP_SoS.Form10.resources
+C:\Users\Programmer\source\repos\PvP_SoS\obj\Debug\PvP_SoS.Form9.resources
+C:\Users\taran\Desktop\Kişisel\Proje\Ödevler ve projeler\c#\PvP_SoS\bin\Debug\PvP_SoS.exe.config
+C:\Users\taran\Desktop\Kişisel\Proje\Ödevler ve projeler\c#\PvP_SoS\bin\Debug\PvP_SoS.exe
+C:\Users\taran\Desktop\Kişisel\Proje\Ödevler ve projeler\c#\PvP_SoS\bin\Debug\PvP_SoS.pdb
+C:\Users\taran\Desktop\Kişisel\Proje\Ödevler ve projeler\c#\PvP_SoS\bin\Debug\EntityFramework.dll
+C:\Users\taran\Desktop\Kişisel\Proje\Ödevler ve projeler\c#\PvP_SoS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\taran\Desktop\Kişisel\Proje\Ödevler ve projeler\c#\PvP_SoS\bin\Debug\EntityFramework.xml
+C:\Users\taran\Desktop\Kişisel\Proje\Ödevler ve projeler\c#\PvP_SoS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\taran\Desktop\Kişisel\Proje\Ödevler ve projeler\c#\PvP_SoS\obj\Debug\PvP_SoS.csprojAssemblyReference.cache
+C:\Users\taran\Desktop\Kişisel\Proje\Ödevler ve projeler\c#\PvP_SoS\obj\Debug\PvP_SoS.Form1.resources
+C:\Users\taran\Desktop\Kişisel\Proje\Ödevler ve projeler\c#\PvP_SoS\obj\Debug\PvP_SoS.Form10.resources
+C:\Users\taran\Desktop\Kişisel\Proje\Ödevler ve projeler\c#\PvP_SoS\obj\Debug\PvP_SoS.Form2.resources
+C:\Users\taran\Desktop\Kişisel\Proje\Ödevler ve projeler\c#\PvP_SoS\obj\Debug\PvP_SoS.Form3.resources
+C:\Users\taran\Desktop\Kişisel\Proje\Ödevler ve projeler\c#\PvP_SoS\obj\Debug\PvP_SoS.Form4.resources
+C:\Users\taran\Desktop\Kişisel\Proje\Ödevler ve projeler\c#\PvP_SoS\obj\Debug\PvP_SoS.Form5.resources
+C:\Users\taran\Desktop\Kişisel\Proje\Ödevler ve projeler\c#\PvP_SoS\obj\Debug\PvP_SoS.Form6.resources
+C:\Users\taran\Desktop\Kişisel\Proje\Ödevler ve projeler\c#\PvP_SoS\obj\Debug\PvP_SoS.Form7.resources
+C:\Users\taran\Desktop\Kişisel\Proje\Ödevler ve projeler\c#\PvP_SoS\obj\Debug\PvP_SoS.Form8.resources
+C:\Users\taran\Desktop\Kişisel\Proje\Ödevler ve projeler\c#\PvP_SoS\obj\Debug\PvP_SoS.Form9.resources
+C:\Users\taran\Desktop\Kişisel\Proje\Ödevler ve projeler\c#\PvP_SoS\obj\Debug\PvP_SoS.Properties.Resources.resources
+C:\Users\taran\Desktop\Kişisel\Proje\Ödevler ve projeler\c#\PvP_SoS\obj\Debug\PvP_SoS.csproj.GenerateResource.cache
+C:\Users\taran\Desktop\Kişisel\Proje\Ödevler ve projeler\c#\PvP_SoS\obj\Debug\PvP_SoS.csproj.CoreCompileInputs.cache
+C:\Users\taran\Desktop\Kişisel\Proje\Ödevler ve projeler\c#\PvP_SoS\obj\Debug\PvP_SoS.csproj.CopyComplete
+C:\Users\taran\Desktop\Kişisel\Proje\Ödevler ve projeler\c#\PvP_SoS\obj\Debug\PvP_SoS.exe
+C:\Users\taran\Desktop\Kişisel\Proje\Ödevler ve projeler\c#\PvP_SoS\obj\Debug\PvP_SoS.pdb

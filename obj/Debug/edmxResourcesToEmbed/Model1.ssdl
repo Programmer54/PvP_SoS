@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GenelModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="SoS_Kullanici">
+    <Key>
+      <PropertyRef Name="KullaniciAdi" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adi" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="KullaniciAdi" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Sifre" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Zafer" Type="int" Nullable="false" />
+    <Property Name="Bozgun" Type="int" Nullable="false" />
+    <Property Name="İstek" Type="int" Nullable="false" />
+    <Property Name="Online" Type="bit" Nullable="false" />
+    <Property Name="Sohbet" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SoS_Oyun_İci">
+    <Key>
+      <PropertyRef Name="OyunId" />
+    </Key>
+    <Property Name="OyunId" Type="int" Nullable="false" />
+    <Property Name="Sira" Type="int" />
+    <Property Name="Kazanan" Type="int" />
+    <Property Name="HamleSayisi" Type="int" />
+    <Property Name="Degisenİndis" Type="int" />
+    <Property Name="İndisDegeri" Type="char" MaxLength="1" />
+    <Property Name="Bittimi" Type="bit" Nullable="false" />
+    <Property Name="Ben" Type="int" Nullable="false" />
+    <Property Name="O" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SoS_Oyun_Kabul">
+    <Key>
+      <PropertyRef Name="OyunId" />
+    </Key>
+    <Property Name="OyunId" Type="int" Nullable="false" />
+    <Property Name="Kimden" Type="int" Nullable="false" />
+    <Property Name="Kime" Type="int" Nullable="false" />
+    <Property Name="Kabul" Type="int" Nullable="false" />
+    <Property Name="Oyun_Asil_İd" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SoS_Sohbet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Sohbet_id" Type="int" Nullable="false" />
+    <Property Name="Kimden" Type="int" Nullable="false" />
+    <Property Name="Kime" Type="int" Nullable="false" />
+    <Property Name="Tarih" Type="datetime" Nullable="false" />
+    <Property Name="Mesaj" Type="text" />
+    <Property Name="Bittimi" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="GenelModelStoreContainer">
+    <EntitySet Name="SoS_Kullanici" EntityType="Self.SoS_Kullanici" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SoS_Oyun_İci" EntityType="Self.SoS_Oyun_İci" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SoS_Oyun_Kabul" EntityType="Self.SoS_Oyun_Kabul" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SoS_Sohbet" EntityType="Self.SoS_Sohbet" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
